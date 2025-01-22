@@ -5,7 +5,7 @@ import json # import json
 # create request to archive page
 blog_archive_url = 'https://enlear.academy/archive/2022/01'
 response = requests.get(blog_archive_url)
-# parse the resposne using HTML parser on BeautifulSoup
+# parse the response using HTML parser on BeautifulSoup
 parsedHtml = BeautifulSoup(response.text, 'html.parser')
 
 # get list of all divs having the classes "streamItem streamItem--postPreview js-streamItem" to get each story.
